@@ -1,0 +1,75 @@
+:host {
+    --fs-hero-title: 1.5rem;
+    --fs-hero-subTitle: 1rem;
+    --fs-hero-tags: 1rem;
+    --gap-hero: 16px;
+    --gap-tag: 8px;
+    --padding-tag: 8px;
+    --padding-hero: 16px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        --fs-hero-title: 2rem;
+        --fs-hero-subTitle: 1.5rem;
+        --fs-hero-tags: 1rem;
+        --gap-hero: 32px;
+        --gap-tag: 16px;
+        --padding-tag: 16px;
+        --padding-hero: 32px 90px;
+
+    }
+}
+
+.heroWrapper {
+    padding: var(--padding-hero);
+    background-color: var(--clr-green-background);
+}
+
+.heroContainer {
+    font-weight: 500;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--gap-hero)
+}
+
+.heroContainer h1 {
+    font-size: var(--fs-hero-title);
+    max-width: 423px;
+    font-weight: 500;
+}
+
+.heroContainer span {
+    font-size: var(--fs-hero-tags);
+}
+
+.heroContainer h2 {
+    font-size: var(--fs-hero-subTitle);
+    max-width: 656px;
+    font-weight: 500;
+    color: #7A7A7A;
+}
+
+.tagContainer {
+    margin: var(--gap-tag) 0;
+    display: flex;
+    gap: var(--gap-tag);
+}
+
+.tagContainer span {
+    background-color: #E36028;
+    padding: var(--padding-tag);
+    border-radius: 6px;
+}
+
+.tagContainer span:nth-of-type(2) {
+    background-color: #2760E5;
+}
+
+.tagContainer span:nth-of-type(3) {
+    background-color: #E4D04B;
+}
+
