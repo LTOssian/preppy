@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Jokker';
+    src: url('./assets/JokkerTRIALVF.woff') format('woff'),
+        url('./assets/JokkerTRIALVF.woff2') format('woff2');
+}
+
+:root {
+    /* Colors */
+    --clr-blue: #10162F;
+    --clr-white: #FFFEFD;
+    --clr-green-background: #B1E87A;
+    --clr-green-answer: #3EB38C;
+    --clr-red-answer: #661917;
+    --clr-yellow-CTA: #FFD300;
+    --clr-black: #141313;
+    --padding-global: 16px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --padding-global: 16px 90px;
+    }
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Jokker', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
