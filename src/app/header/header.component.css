@@ -1,0 +1,7 @@
+header {
+    background-color: var(--clr-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-global);
+}
