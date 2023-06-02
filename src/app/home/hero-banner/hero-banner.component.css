@@ -18,9 +18,15 @@
         --gap-tag: 16px;
         --padding-tag: 16px;
         --padding-hero: 32px 90px;
-
     }
 }
+
+@media only screen and (max-width: 1025px) {
+    :host {
+        --padding-hero: 32px;
+    }
+}
+
 
 .heroWrapper {
     padding: var(--padding-hero);
