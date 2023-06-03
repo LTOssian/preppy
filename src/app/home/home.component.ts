@@ -8,7 +8,7 @@ import { CatalogData } from '../../utils/quizContent.dto';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  reinsuranceText: string = "Nos questions sont vérifiés par des professionnels et sourcés par le MDN";
+  reinsuranceText: string = "Nos questions sont vérifiés par des professionnels.elles et sourcées avec le MDN";
 
   catalogData: CatalogData[] | undefined;
 
