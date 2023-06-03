@@ -21,7 +21,7 @@
     }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
     :host {
         --padding-hero: 32px;
     }
@@ -62,6 +62,7 @@
 .tagContainer {
     margin: var(--gap-tag) 0;
     display: flex;
+    flex-flow: row wrap;
     gap: var(--gap-tag);
 }
 
