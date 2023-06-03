@@ -1,0 +1,45 @@
+:host {
+    --padding-catalog: 0 16px; 
+    --fs-title: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        --padding-catalog: 0 90px;
+        --fs-title: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 769px) {
+    :host {
+        --padding-catalog: 0 32px;
+    }
+}
+
+.wrapper {
+    color: var(--clr-white);
+    font-size: var(--fs-title);
+    padding: var(--padding-catalog);
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.titleContainer {
+    background-color: var(--clr-blue);
+    border: 1px solid var(--clr-blue-light);
+    border-radius: 6px;
+}
+
+.titleContainer:hover {
+    background-color: var(--clr-blue-light);
+}
+
+.routerWrapper {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--clr-white);
+}
+

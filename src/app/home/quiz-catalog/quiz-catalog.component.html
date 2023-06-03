@@ -1,0 +1,11 @@
+<div class="wrapper">
+
+    <div class="titleContainer" *ngFor="let quizDatum of data">
+        <a class="routerWrapper" routerLink="/quiz/{{quizDatum.id}}">
+            <p>{{ quizDatum.title }}</p>
+            <span>{{ quizDatum.quantityOfQuestions }} questions</span>
+        </a>
+    </div>
+</div>
+
+
