@@ -2,6 +2,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QuizCatalogComponent } from './quiz-catalog.component';
 import { QuizContent } from 'src/utils/quizContent';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { RouterModule } from '@angular/router';
 
 describe('QuizCatalogComponent', () => {
   let component: QuizCatalogComponent;
@@ -9,8 +12,14 @@ describe('QuizCatalogComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [QuizCatalogComponent]
-    });
+      declarations: [QuizCatalogComponent],
+      imports: [
+        AppRoutingModule,
+      ],
+      providers: [
+        QuizContent
+      ],
+        });
     fixture = TestBed.createComponent(QuizCatalogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -32,13 +41,13 @@ describe('QuizCatalogComponent', () => {
     titleContainerElements.forEach((titleContainer, i: number) => {
       const quizDatum = catalogData[i];
 
-      const routeLinkElement = titleContainer.querySelector('a') as HTMLAnchorElement;
-      const titleText = routeLinkElement.querySelector('p')?.textContent;
-      const quantityText = routeLinkElement.querySelector('span')?.textContent;
+      const routerLinkElement = titleContainer.querySelector('a') as HTMLAnchorElement;
+      const titleText = routerLinkElement.querySelector('p')?.textContent;
+      const quantityText = routerLinkElement.querySelector('span')?.textContent;
 
       expect(titleText).toContain(quizDatum.title);
       expect(quantityText).toContain(`${quizDatum.quantityOfQuestions} questions`);
-      expect(routeLinkElement.getAttribute('routerLink')).toBe(`/quiz/${quizDatum.id}`);
+      expect(routerLinkElement.getAttribute('href')).toBe(`/quiz/${quizDatum.id}`);
     })
   })
 });

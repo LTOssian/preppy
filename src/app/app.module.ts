@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HeroBannerComponent } from './home/hero-banner/hero-banner.component';
 import { ReinsuranceElementComponent } from './home/reinsurance-element/reinsurance-element.component';
+import { QuizCatalogComponent } from './home/quiz-catalog/quiz-catalog.component';
+import { QuizContent } from '../utils/quizContent';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,16 @@ import { ReinsuranceElementComponent } from './home/reinsurance-element/reinsura
     HomeComponent,
     NotFoundComponent,
     HeroBannerComponent,
-    ReinsuranceElementComponent
+    ReinsuranceElementComponent,
+    QuizCatalogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    QuizContent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

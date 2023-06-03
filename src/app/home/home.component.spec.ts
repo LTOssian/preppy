@@ -5,6 +5,9 @@ import { HeaderComponent } from '../header/header.component';
 import { AppComponent } from '../app.component';
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 import { ReinsuranceElementComponent } from './reinsurance-element/reinsurance-element.component';
+import { QuizContent } from 'src/utils/quizContent';
+import { QuizCatalogComponent } from './quiz-catalog/quiz-catalog.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -16,7 +19,15 @@ describe('HomeComponent', () => {
         HeaderComponent,
         HeroBannerComponent,
         ReinsuranceElementComponent,
-        HomeComponent]
+        HomeComponent,
+        QuizCatalogComponent
+      ],
+      imports: [
+        AppRoutingModule,
+      ],
+      providers: [
+        QuizContent
+      ]
     });
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
