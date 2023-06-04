@@ -6,13 +6,14 @@ type AnswerType = {
 type QuestionType = {
     question: string,
     answers: AnswerType[],
-    explaination: string 
+    explaination: string,
+    source?: string
 }
 
 export interface Quiz {
     id: number,
     title: string,
-    questions: QuestionType[]
+    questions: QuestionType[],
 }
 
 export interface CatalogData {
