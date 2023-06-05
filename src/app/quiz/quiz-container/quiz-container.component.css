@@ -1,0 +1,19 @@
+.wrapper {
+    padding: var(--padding-global);
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.wrapper > * {
+    width: 100%;
+}
+
+
+li {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 16px;
+}
