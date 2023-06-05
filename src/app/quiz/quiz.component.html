@@ -1,0 +1,23 @@
+<div class="wrapper" >
+    <app-header></app-header>
+    <ng-container *ngIf="(currentQuiz$ | async) as currentQuiz" >
+      <section *ngIf="gameStatus">
+        <h1> {{getCurrentQuestion(currentQuiz)}} </h1>
+        <app-quiz-container 
+          [currentData]="getCurrentAnswers(currentQuiz)"
+          (answerClicked)="handleAnswer($event, currentQuiz)"
+          ></app-quiz-container>
+        <div class="footer">
+          <span> {{ getCurrentQuestionIndex() + 1}} / {{ getTotalQuestions(currentQuiz) }}</span>
+          <app-next-button [buttonText]="'Suivant'" (click)="setNextQuestion(currentQuiz)"></app-next-button>
+        </div>
+      </section>
+
+      <section *ngIf="!gameStatus">
+        
+        <div class="footer">
+          <app-next-button [buttonText]="'Retour à l\'accueil'"></app-next-button>
+        </div>
+      </section>
+    </ng-container>
+</div>

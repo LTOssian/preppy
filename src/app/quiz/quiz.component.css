@@ -1,0 +1,42 @@
+:host {
+    --fs-question: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        --fs-question: 2rem;
+    }
+}
+
+.wrapper {
+    height: 100%;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+section {
+    padding: var(--padding-global);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+h1 {
+    text-align: center;
+    margin: 32px 0;
+    font-weight: 500;
+    font-size: var(--fs-question); 
+}
+
+app-quiz-container {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
