@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <ul>
+        <li *ngFor="let answerData of currentData">
+            <app-answer-card 
+                [answerData]="answerData"
+                (click)="click(answerData.status)"
+            ></app-answer-card>
+        </li>
+    </ul>
+</div>

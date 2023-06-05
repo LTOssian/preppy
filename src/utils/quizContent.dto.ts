@@ -1,9 +1,9 @@
-type AnswerType = {
+export type AnswerType = {
     answer: string
     status: boolean
 }
 
-type QuestionType = {
+export type QuestionType = {
     question: string,
     answers: AnswerType[],
     explaination: string,

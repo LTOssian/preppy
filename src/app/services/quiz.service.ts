@@ -2,16 +2,23 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CatalogData, Quiz } from 'src/utils/quizContent.dto';
 import { Observable, map } from 'rxjs';
+import { QuizContent } from 'src/utils/quizContent';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuizService {
+  constructor(
+    private http: HttpClient,
+    private quizContent: QuizContent
+    ) {
 
-  constructor(private http: HttpClient) { }
+  }
+
+  jsonPath: string = '../../assets/quizContent.json';
 
   getCatalogData(): Observable<CatalogData[]> {
-      const catalogData = this.http.get('../assets/quizContent.json').pipe(
+      const catalogData = this.http.get(this.jsonPath).pipe(
         map((quizzes: any, i: number) => {
           const homeData: CatalogData[] = quizzes.map((quiz: Quiz) => ({
                   title: quiz.title,
@@ -24,5 +31,16 @@ export class QuizService {
       )
 
       return catalogData
+  }
+
+  getQuizById(id: number): Observable<Quiz | undefined> {
+    const quizData = this.http.get(this.jsonPath)
+      .pipe(map((quizzes: any, i: number) => {
+        const quizFiltered: Quiz | undefined = quizzes.find((quiz: Quiz) => quiz.id === id)
+        return quizFiltered;
+      })
+    );
+
+    return quizData;
   }
 }
