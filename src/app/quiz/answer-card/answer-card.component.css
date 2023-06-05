@@ -1,0 +1,36 @@
+:host {
+    --p-card: 16px;
+    --fs-answers: 1rem;
+
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        --fs-answers: 1.5rem;
+    }
+}
+
+.wrapper {
+    color: var(--clr-white);
+    padding: var(--p-card);
+    background-color: var(--clr-blue);
+    border: 1px solid var(--clr-blue-light);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    font-size: var(--fs-answers);
+    font-family: 'Jokker', sans-serif;
+}
+
+.wrapper:hover {
+    background-color: var(--clr-blue-light);
+}
+
+.rightAnswer {
+    background-color: var(--clr-green-answer);
+}
+
+.wrongAnswer {
+    background-color: var(--clr-red-answer);
+}

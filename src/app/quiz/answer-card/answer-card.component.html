@@ -1,0 +1,10 @@
+<button 
+    class="wrapper" 
+    (click)="click()"
+
+    [ngClass]="{
+        'rightAnswer': isClicked && answerData?.status,
+        'wrongAnswer': isClicked && !answerData?.status
+    }">
+    <p> {{ answerData?.answer }}</p>
+</button>
