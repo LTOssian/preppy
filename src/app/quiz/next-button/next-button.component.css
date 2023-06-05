@@ -1,0 +1,27 @@
+:host {
+    --p-button: 16px;
+    --fs-button: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    :host {
+        --p-button: 16px 32px;
+        --fs-title: 2rem;
+    }
+}
+
+
+button {
+    padding: var(--p-button);
+    font-size: var(--fs-button);
+    border-radius: 6px;
+    border: none;
+    background-color: var(--clr-yellow-CTA);
+    cursor: pointer;
+    font-family: 'Jokker', sans-serif;
+
+}
+
+button:hover {
+    background-color: var(--clr-green-background);
+}
