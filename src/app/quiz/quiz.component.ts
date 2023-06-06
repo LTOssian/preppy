@@ -31,6 +31,15 @@ export class QuizComponent implements OnInit {
         return this.quizService.getQuizById(id);
       })
     );
+
+    this.currentQuiz$.subscribe(
+      (quiz: Quiz | undefined) => {
+        if (!quiz) {
+          this.redirectToNotFound();
+        }
+      }
+    );
+  
   }
 
 
@@ -89,7 +98,11 @@ export class QuizComponent implements OnInit {
   }
 
   redirectToHome() {
-    this.router.navigate(['/']);
+    this.router.navigateByUrl('/');
+  }
+
+  redirectToNotFound() {
+    this.router.navigateByUrl('/not-found');
   }
 }
 
