@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { AnswerType, Quiz } from 'src/utils/quizContent.dto';
 import { QuizService } from '../services/quiz.service';
 import { Observable, map, switchMap } from 'rxjs';
@@ -21,6 +21,7 @@ export class QuizComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private quizService: QuizService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -40,6 +41,17 @@ export class QuizComponent implements OnInit {
 
   getCurrentQuestionIndex(): number{
     return this.currentQuestionIndex;
+  }
+
+  getCurrentExplanation(quiz: Quiz): string {
+    const currentIndex = this.getCurrentQuestionIndex();
+    return quiz.questions[currentIndex].explaination;
+  }
+
+  getCurrentSource(quiz: Quiz): string {
+    const currentIndex = this.getCurrentQuestionIndex();
+    return quiz.questions[currentIndex].source ?? "";
+
   }
 
   getTotalQuestions(quiz: Quiz): number {
@@ -74,6 +86,10 @@ export class QuizComponent implements OnInit {
       this.setCurrentScore(quiz);
       this.isCurrentQuestionAnswered = true;
     }
+  }
+
+  redirectToHome() {
+    this.router.navigate(['/']);
   }
 }
 

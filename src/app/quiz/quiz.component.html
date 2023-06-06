@@ -7,16 +7,31 @@
           [currentData]="getCurrentAnswers(currentQuiz)"
           (answerClicked)="handleAnswer($event, currentQuiz)"
           ></app-quiz-container>
+          <div class="explanation" *ngIf="isCurrentQuestionAnswered">
+            <h2> {{getCurrentExplanation(currentQuiz)}} </h2>
+            <a *ngIf="getCurrentSource(currentQuiz)" [href]="getCurrentSource(currentQuiz)" target="_blank">En savoir plus...</a>
+          </div>
         <div class="footer">
           <span> {{ getCurrentQuestionIndex() + 1}} / {{ getTotalQuestions(currentQuiz) }}</span>
-          <app-next-button [buttonText]="'Suivant'" (click)="setNextQuestion(currentQuiz)"></app-next-button>
+          <app-next-button 
+            [buttonText]="'Suivant'" 
+            (click)="setNextQuestion(currentQuiz)">
+          </app-next-button>
         </div>
       </section>
 
       <section *ngIf="!gameStatus">
-        
+        <div class="scoreBoard">
+          <h2>Résumé du quiz</h2>
+          <h1> {{currentQuiz.title}} </h1>
+          <span>{{ getCurrentScore() }} % </span>
+          <img src="../../assets/emeoji.svg" alt="smart emoji">
+        </div>
         <div class="footer">
-          <app-next-button [buttonText]="'Retour à l\'accueil'"></app-next-button>
+          <app-next-button 
+            [buttonText]="'Retour à l\'accueil'"
+            (click)="redirectToHome()">
+          </app-next-button>
         </div>
       </section>
     </ng-container>
