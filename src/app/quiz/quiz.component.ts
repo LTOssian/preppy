@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { AnswerType, Quiz } from 'src/utils/quizContent.dto';
 import { QuizService } from '../services/quiz.service';
-import { Observable, map, switchMap } from 'rxjs';
+import { Observable, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-quiz',
@@ -41,7 +41,6 @@ export class QuizComponent implements OnInit {
     );
   
   }
-
 
   getCurrentQuestion(quiz: Quiz): string {
     const currentIndex = this.getCurrentQuestionIndex();
