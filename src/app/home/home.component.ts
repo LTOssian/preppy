@@ -1,6 +1,6 @@
-import { Component, NgModule, OnInit } from '@angular/core';
-import { QuizContent } from '../../utils/quizContent';
+import { Component, OnInit } from '@angular/core';
 import { CatalogData } from '../../utils/quizContent.dto';
+import { QuizService } from '../services/quiz.service';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +8,14 @@ import { CatalogData } from '../../utils/quizContent.dto';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  reinsuranceText: string = "Nos questions sont vérifiés par des professionnels.elles et sourcées avec le MDN";
+  reinsuranceText: string = "Nos questions sont vérifiées par des professionnels.elles et sourcées avec le MDN";
 
   catalogData: CatalogData[] | undefined;
-
-  constructor(private quizContent: QuizContent) {}
+  constructor(private quizService: QuizService) {}
 
   ngOnInit(): void {
-    this.catalogData = this.quizContent.getCatalogData();
+    this.quizService.getCatalogData().subscribe(
+      (homeData) => this.catalogData = homeData
+    );
   }
 }
