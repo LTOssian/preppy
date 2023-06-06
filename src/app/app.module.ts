@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AnswerCardComponent } from './quiz/answer-card/answer-card.component';
 import { QuizContainerComponent } from './quiz/quiz-container/quiz-container.component';
 import { NextButtonComponent } from './quiz/next-button/next-button.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NextButtonComponent } from './quiz/next-button/next-button.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [
     QuizContent,

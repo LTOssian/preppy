@@ -6,7 +6,7 @@ export type AnswerType = {
 export type QuestionType = {
     question: string,
     answers: AnswerType[],
-    explaination: string,
+    explanation: string,
     source?: string
 }
 

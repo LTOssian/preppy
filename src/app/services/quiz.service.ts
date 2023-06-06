@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CatalogData, Quiz } from 'src/utils/quizContent.dto';
 import { Observable, map } from 'rxjs';
-import { QuizContent } from 'src/utils/quizContent';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +9,6 @@ import { QuizContent } from 'src/utils/quizContent';
 export class QuizService {
   constructor(
     private http: HttpClient,
-    private quizContent: QuizContent
     ) {
 
   }

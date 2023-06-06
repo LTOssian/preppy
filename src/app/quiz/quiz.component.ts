@@ -53,7 +53,7 @@ export class QuizComponent implements OnInit {
 
   getCurrentExplanation(quiz: Quiz): string {
     const currentIndex = this.getCurrentQuestionIndex();
-    return quiz.questions[currentIndex].explaination;
+    return quiz.questions[currentIndex].explanation;
   }
 
   getCurrentSource(quiz: Quiz): string {

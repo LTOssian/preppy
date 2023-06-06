@@ -8,6 +8,7 @@ import { ReinsuranceElementComponent } from './reinsurance-element/reinsurance-e
 import { QuizContent } from 'src/utils/quizContent';
 import { QuizCatalogComponent } from './quiz-catalog/quiz-catalog.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -24,6 +25,7 @@ describe('HomeComponent', () => {
       ],
       imports: [
         AppRoutingModule,
+        HttpClientModule
       ],
       providers: [
         QuizContent

@@ -23,7 +23,7 @@
                         "status": false
                     }
                 ],
-                "explaination": "Les labels permettent de décrire les inputs d'un form à travers l'ID. Les ajouter rend votre HTML plus accessible pour les utilisateurs.",
+                "explanation": "Les labels permettent de décrire les inputs d'un form à travers l'ID. Les ajouter rend votre HTML plus accessible pour les utilisateurs.",
                 "source": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/label"
             },
             {
@@ -46,7 +46,7 @@
                         "status": false
                     }
                 ],
-                "explaination": "Afin de grouper des 'form controls' il faut utiliser l'ément <fieldset>.",
+                "explanation": "Afin de grouper des 'form controls' il faut utiliser l'ément <fieldset>.",
                 "source": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/fieldset"
             },
             {
@@ -57,19 +57,20 @@
                         "status": false
                     },
                     {
-                        "answer": "<!DOCTYPE html>",
-                        "status": true
+                        "answer": "<main>",
+                        "status": false
                     },
                     {
                         "answer": "<html>",
                         "status": false
                     },
                     {
-                        "answer": "<main>",
-                        "status": false
+                        "answer": "<!DOCTYPE html>",
+                        "status": true
+
                     }
                 ],
-                "explaination": "Déclarer le doctype indique au navigateur que le fichier est un document HTML.",
+                "explanation": "Déclarer le doctype indique au navigateur que le fichier est un document HTML.",
                 "source": "https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
             },
             {
@@ -92,16 +93,12 @@
                         "status": false
                     }
                 ],
-                "explaination": "Bien vu !",
+                "explanation": "Bien vu !",
                 "source": "https://developer.mozilla.org/en-US/docs/Web/API/Comment"
             },
             {
                 "question": "Lequel de ces éléments contient les metadata de la page ?",
                 "answers": [
-                    {
-                        "answer": "<head>",
-                        "status": true
-                    },
                     {
                         "answer": "<about>",
                         "status": false
@@ -113,9 +110,13 @@
                     {
                         "answer": "<legend>",
                         "status": false
+                    },
+                    {
+                        "answer": "<head>",
+                        "status": true
                     }
                 ],
-                "explaination": "Le tag <head> contient toutes les metadata de la page HTML.",
+                "explanation": "Le tag <head> contient toutes les metadata de la page HTML.",
                 "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
             },
             {
@@ -138,7 +139,7 @@
                         "status": false
                     }
                 ],
-                "explaination": "L'attribut target avec la valeur '_blank' va ouvrir une nouvelle page quand le lien est cliqué."
+                "explanation": "L'attribut target avec la valeur '_blank' va ouvrir une nouvelle page quand le lien est cliqué."
             },
             {
                 "question": "Quel est le standard HTML actuel ?",
@@ -160,7 +161,7 @@
                         "status": false
                     }
                 ],
-                "explaination": "Bien vu !"
+                "explanation": "Bien vu !"
             },
             {
                 "question": "Laquelle de ces syntaxes permet de créer un lien vers le fichier accueil.html ?",
@@ -182,7 +183,7 @@
                         "status": false
                     }
                 ],
-                "explaination": "Bien vu, il s'agit de la bonne syntaxe.",
+                "explanation": "Bien vu, il s'agit de la bonne syntaxe.",
                 "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled"
             },
             {
@@ -205,16 +206,12 @@
                         "status": false
                     }
                 ],
-                "explaination": "L'attribut booléen 'disabled' rend l'élément non-focusable, non-mutable et ne peut être soumis au serveur.",
+                "explanation": "L'attribut booléen 'disabled' rend l'élément non-focusable, non-mutable et ne peut être soumis au serveur.",
                 "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled"
             },
             {
                 "question": "ù apparait le contenu de l'élément <title> ?",
                 "answers": [
-                    {
-                        "answer": "L'onglet du navigateur",
-                        "status": true
-                    },
                     {
                         "answer": "La première ligne de la page",
                         "status": false
@@ -226,9 +223,13 @@
                     {
                         "answer": "Il n'apparait nul part et ne sert qu'au SEO",
                         "status": false
+                    },
+                    {
+                        "answer": "L'onglet du navigateur",
+                        "status": true
                     }
                 ],
-                "explaination": "Et oui ! L'élément <title> définit le titre du document qui est affiché dans la barre de titre du navigateur ou dans l'onglet de la page.",
+                "explanation": "Et oui ! L'élément <title> définit le titre du document qui est affiché dans la barre de titre du navigateur ou dans l'onglet de la page.",
                 "source": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/title"
             },
             {
@@ -251,7 +252,7 @@
                         "status": false
                     }
                 ],
-                "explaination": "Bien vu !"
+                "explanation": "Bien vu !"
             }                
         ]
     },
@@ -279,7 +280,7 @@
                         "status": false
                     }
                 ],
-                "explaination": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
+                "explanation": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
             },
             {
                 "question": "Quelle syntaxe permet de cibler un élément se trouvant dans un autre élément ?",
@@ -301,89 +302,716 @@
                         "status": true
                     }
                 ],
-                "explaination": "Un espace entre deux sélecteurs permet de cibler le second (li) se trouvant dans le premier (.main-list)."
+                "explanation": "Un espace entre deux sélecteurs permet de cibler le second (li) se trouvant dans le premier (.main-list)."
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour changer la couleur du texte d'un élément ?",
+                "answers": [
+                    {
+                        "answer": "color",
+                        "status": true
+                    },
+                    {
+                        "answer": "background-color",
+                        "status": false
+                    },
+                    {
+                        "answer": "text-color",
+                        "status": false
+                    },
+                    {
+                        "answer": "font-color",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'color' est utilisée pour changer la couleur du texte d'un élément.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour définir la taille de la police du texte ?",
+                "answers": [
+                    {
+                        "answer": "font-size",
+                        "status": true
+                    },
+                    {
+                        "answer": "text-size",
+                        "status": false
+                    },
+                    {
+                        "answer": "font-style",
+                        "status": false
+                    },
+                    {
+                        "answer": "text-style",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'font-size' est utilisée pour définir la taille de la police du texte.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour aligner le texte à droite d'un élément ?",
+                "answers": [
+                    {
+                        "answer": "text-align: right;",
+                        "status": true
+                    },
+                    {
+                        "answer": "text-align: center;",
+                        "status": false
+                    },
+                    {
+                        "answer": "text-align: left;",
+                        "status": false
+                    },
+                    {
+                        "answer": "text-align: justify;",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'text-align' avec la valeur 'right' est utilisée pour aligner le texte à droite d'un élément.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour ajouter de l'espacement entre les lignes du texte ?",
+                "answers": [
+                    {
+                        "answer": "line-height",
+                        "status": true
+                    },
+                    {
+                        "answer": "text-spacing",
+                        "status": false
+                    },
+                    {
+                        "answer": "letter-spacing",
+                        "status": false
+                    },
+                    {
+                        "answer": "word-spacing",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'line-height' est utilisée pour ajouter de l'espacement entre les lignes du texte.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour ajouter une ombre à un élément ?",
+                "answers": [
+                    {
+                        "answer": "box-shadow",
+                        "status": true
+                    },
+                    {
+                        "answer": "text-shadow",
+                        "status": false
+                    },
+                    {
+                        "answer": "shadow",
+                        "status": false
+                    },
+                    {
+                        "answer": "element-shadow",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'box-shadow' est utilisée pour ajouter une ombre à un élément.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour définir l'espacement entre les mots d'un texte ?",
+                "answers": [
+                    {
+                        "answer": "word-spacing",
+                        "status": true
+                    },
+                    {
+                        "answer": "letter-spacing",
+                        "status": false
+                    },
+                    {
+                        "answer": "line-spacing",
+                        "status": false
+                    },
+                    {
+                        "answer": "text-spacing",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'word-spacing' est utilisée pour définir l'espacement entre les mots d'un texte.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour définir la couleur de fond d'un élément ?",
+                "answers": [
+                    {
+                        "answer": "background-color",
+                        "status": true
+                    },
+                    {
+                        "answer": "color",
+                        "status": false
+                    },
+                    {
+                        "answer": "background",
+                        "status": false
+                    },
+                    {
+                        "answer": "background-image",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'background-color' est utilisée pour définir la couleur de fond d'un élément.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/background-color"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour ajouter une bordure à un élément ?",
+                "answers": [
+                    {
+                        "answer": "border",
+                        "status": true
+                    },
+                    {
+                        "answer": "border-style",
+                        "status": false
+                    },
+                    {
+                        "answer": "border-color",
+                        "status": false
+                    },
+                    {
+                        "answer": "border-width",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'border' est utilisée pour ajouter une bordure à un élément.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/border"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour aligner horizontalement un élément dans son conteneur ?",
+                "answers": [
+                    {
+                        "answer": "margin",
+                        "status": false
+                    },
+                    {
+                        "answer": "padding",
+                        "status": false
+                    },
+                    {
+                        "answer": "position",
+                        "status": false
+                    },
+                    {
+                        "answer": "text-align",
+                        "status": true
+                    }
+                ],
+                "explanation": "La propriété 'text-align' est utilisée pour aligner horizontalement un élément dans son conteneur.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-align"
+            },
+            {
+                "question": "Quelle est la propriété CSS utilisée pour définir la police du texte ?",
+                "answers": [
+                    {
+                        "answer": "font-family",
+                        "status": true
+                    },
+                    {
+                        "answer": "font-style",
+                        "status": false
+                    },
+                    {
+                        "answer": "font-weight",
+                        "status": false
+                    },
+                    {
+                        "answer": "font-size",
+                        "status": false
+                    }
+                ],
+                "explanation": "La propriété 'font-family' est utilisée pour définir la police du texte.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family"
             }
-
         ]
     },
     {
         "id": 2,
-        "title": "Fondamentaux JS",
+        "title": "Fondamentaux JS (Les méthodes)",
         "questions": [
             {
-                "question": "Laquelle de ces affirmations est vraie",
+                "question": "Quelle est la méthode JavaScript utilisée pour ajouter un nouvel élément à la fin d'un tableau ?",
                 "answers": [
                     {
-                        "answer": "Les tags sont plus spécifiques que les IDs et les classes",
-                        "status": false
-                    },
-                    {
-                        "answer": "Les classes sont plus spécifiques que les IDs et les tags",
-                        "status": false
-                    },
-                    {
-                        "answer": "Les IDs sont plus spécifiques que les classes et les tags",
+                        "answer": "push()",
                         "status": true
                     },
                     {
-                        "answer": "Un sélécteur de 3 classes est plus spécifiques qu'un ID",
+                        "answer": "concat()",
+                        "status": false
+                    },
+                    {
+                        "answer": "pop()",
+                        "status": false
+                    },
+                    {
+                        "answer": "shift()",
                         "status": false
                     }
                 ],
-                "explaination": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
+                "explanation": "La méthode 'push()' est utilisée pour ajouter un nouvel élément à la fin d'un tableau.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+            },
+            {
+                "question": "Quelle est la fonction JavaScript utilisée pour arrondir un nombre à l'entier le plus proche ?",
+                "answers": [
+                    {
+                        "answer": "Math.floor()",
+                        "status": false
+                    },
+                    {
+                        "answer": "Math.round()",
+                        "status": true
+                    },
+                    {
+                        "answer": "Math.ceil()",
+                        "status": false
+                    },
+                    {
+                        "answer": "Math.random()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La fonction 'Math.round()' est utilisée pour arrondir un nombre à l'entier le plus proche.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round"
+            },
+            {
+                "question": "Quelle méthode JavaScript est utilisée pour supprimer le dernier élément d'un tableau ?",
+                "answers": [
+                    {
+                        "answer": "pop()",
+                        "status": true
+                    },
+                    {
+                        "answer": "shift()",
+                        "status": false
+                    },
+                    {
+                        "answer": "push()",
+                        "status": false
+                    },
+                    {
+                        "answer": "unshift()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La méthode 'pop()' est utilisée pour supprimer le dernier élément d'un tableau.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+            },
+            {
+                "question": "Quelle est la méthode JavaScript utilisée pour convertir une chaîne de caractères en un tableau ?",
+                "answers": [
+                    {
+                        "answer": "split()",
+                        "status": true
+                    },
+                    {
+                        "answer": "join()",
+                        "status": false
+                    },
+                    {
+                        "answer": "concat()",
+                        "status": false
+                    },
+                    {
+                        "answer": "substring()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La méthode 'split()' est utilisée pour convertir une chaîne de caractères en un tableau.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+            },
+            {
+                "question": "Quelle est la méthode JavaScript utilisée pour ajouter un élément au début d'un tableau ?",
+                "answers": [
+                    {
+                        "answer": "unshift()",
+                        "status": true
+                    },
+                    {
+                        "answer": "push()",
+                        "status": false
+                    },
+                    {
+                        "answer": "concat()",
+                        "status": false
+                    },
+                    {
+                        "answer": "shift()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La méthode 'unshift()' est utilisée pour ajouter un élément au début d'un tableau.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+            },
+            {
+                "question": "Quelle méthode JavaScript est utilisée pour fusionner deux tableaux en un seul tableau ?",
+                "answers": [
+                    {
+                        "answer": "concat()",
+                        "status": true
+                    },
+                    {
+                        "answer": "join()",
+                        "status": false
+                    },
+                    {
+                        "answer": "slice()",
+                        "status": false
+                    },
+                    {
+                        "answer": "splice()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La méthode 'concat()' est utilisée pour fusionner deux tableaux en un seul tableau.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+            },
+            {
+                "question": "Quelle est la méthode JavaScript utilisée pour trier les éléments d'un tableau ?",
+                "answers": [
+                    {
+                        "answer": "sort()",
+                        "status": true
+                    },
+                    {
+                        "answer": "concat()",
+                        "status": false
+                    },
+                    {
+                        "answer": "slice()",
+                        "status": false
+                    },
+                    {
+                        "answer": "splice()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La méthode 'sort()' est utilisée pour trier les éléments d'un tableau.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+            },
+            {
+                "question": "Quelle est la fonction JavaScript utilisée pour générer un nombre aléatoire entre 0 et 1 ?",
+                "answers": [
+                    {
+                        "answer": "Math.random()",
+                        "status": true
+                    },
+                    {
+                        "answer": "Math.round()",
+                        "status": false
+                    },
+                    {
+                        "answer": "Math.ceil()",
+                        "status": false
+                    },
+                    {
+                        "answer": "Math.floor()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La fonction 'Math.random()' est utilisée pour générer un nombre aléatoire entre 0 et 1.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random"
+            },
+            {
+                "question": "Quelle est la méthode JavaScript utilisée pour vérifier si un élément est présent dans un tableau ?",
+                "answers": [
+                    {
+                        "answer": "includes()",
+                        "status": true
+                    },
+                    {
+                        "answer": "indexOf()",
+                        "status": false
+                    },
+                    {
+                        "answer": "find()",
+                        "status": false
+                    },
+                    {
+                        "answer": "filter()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La méthode 'includes()' est utilisée pour vérifier si un élément est présent dans un tableau.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+            },
+            {
+                "question": "Quelle est la méthode JavaScript utilisée pour supprimer un élément d'un tableau à une position spécifique ?",
+                "answers": [
+                    {
+                        "answer": "splice()",
+                        "status": true
+                    },
+                    {
+                        "answer": "slice()",
+                        "status": false
+                    },
+                    {
+                        "answer": "split()",
+                        "status": false
+                    },
+                    {
+                        "answer": "filter()",
+                        "status": false
+                    }
+                ],
+                "explanation": "La méthode 'splice()' est utilisée pour supprimer un élément d'un tableau à une position spécifique.",
+                "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
             }
         ]
     },
     {
         "id": 3,
+        "title": "Python - Problèmes",
+        "questions": [
+          {
+            "question": "Quel est le résultat de l'expression 2 + 3 * 4 ?",
+            "answers": [
+              {
+                "answer": "14",
+                "status": false
+              },
+              {
+                "answer": "20",
+                "status": false
+              },
+              {
+                "answer": "14",
+                "status": false
+              },
+              {
+                "answer": "14",
+                "status": true
+              }
+            ],
+            "explanation": "L'opérateur de multiplication (*) a une priorité plus élevée que l'opérateur d'addition (+), donc l'expression est évaluée comme suit : 2 + (3 * 4) = 2 + 12 = 14.",
+            "source": ""
+          },
+          {
+            "question": "Quelle est la sortie du code suivant ?\n\n```python\nnumbers = [1, 2, 3, 4, 5]\nresult = [x for x in numbers if x % 2 == 0]\nprint(result)\n```",
+            "answers": [
+              {
+                "answer": "[2, 4]",
+                "status": true
+              },
+              {
+                "answer": "[1, 3, 5]",
+                "status": false
+              },
+              {
+                "answer": "[1, 2, 3, 4, 5]",
+                "status": false
+              },
+              {
+                "answer": "[1, 4, 5]",
+                "status": false
+              }
+            ],
+            "explanation": "Le code utilise une compréhension de liste pour filtrer les nombres pairs du tableau 'numbers'. La sortie sera donc [2, 4].",
+            "source": ""
+          },
+          {
+            "question": "Quelle est la méthode Python utilisée pour trouver la longueur d'une chaîne de caractères ?",
+            "answers": [
+              {
+                "answer": "len()",
+                "status": true
+              },
+              {
+                "answer": "length()",
+                "status": false
+              },
+              {
+                "answer": "count()",
+                "status": false
+              },
+              {
+                "answer": "size()",
+                "status": false
+              }
+            ],
+            "explanation": "La méthode `len()` est utilisée pour trouver la longueur d'une chaîne de caractères en Python.",
+            "source": ""
+          },
+          {
+            "question": "Quelle est la sortie du code suivant ?\n\n```python\ndef foo(x=5):\n    return x + 1\n\nprint(foo(10))\n```",
+            "answers": [
+              {
+                "answer": "11",
+                "status": true
+              },
+              {
+                "answer": "5",
+                "status": false
+              },
+              {
+                "answer": "6",
+                "status": false
+              },
+              {
+                "answer": "10",
+                "status": false
+              }
+            ],
+            "explanation": "La fonction `foo()` prend un argument `x` avec une valeur par défaut de 5. Lorsque `foo(10)` est appelé, la valeur de `x` est 10, donc la sortie sera 10 + 1 = 11.",
+            "source": ""
+          },
+          {
+            "question": "Quelle est la méthode Python utilisée pour convertir une chaîne de caractères en minuscules ?",
+            "answers": [
+              {
+                "answer": "lower()",
+                "status": true
+              },
+              {
+                "answer": "upper()",
+                "status": false
+              },
+              {
+                "answer": "capitalize()",
+                "status": false
+              },
+              {
+                "answer": "swapcase()",
+                "status": false
+              }
+            ],
+            "explanation": "La méthode `lower()` est utilisée pour convertir une chaîne de caractères en minuscules en Python.",
+            "source": ""
+          }
+        ]
+    },
+    {
+        "id": 4,
         "title": "Fondamentaux Python",
         "questions": [
             {
-                "question": "Laquelle de ces affirmations est vraie",
-                "answers": [
-                    {
-                        "answer": "Les tags sont plus spécifiques que les IDs et les classes",
-                        "status": false
-                    },
-                    {
-                        "answer": "Les classes sont plus spécifiques que les IDs et les tags",
-                        "status": false
-                    },
-                    {
-                        "answer": "Les IDs sont plus spécifiques que les classes et les tags",
-                        "status": true
-                    },
-                    {
-                        "answer": "Un sélécteur de 3 classes est plus spécifiques qu'un ID",
-                        "status": false
-                    }
-                ],
-                "explaination": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
+            "question": "Quelle est la sortie du code suivant ?\n\n```python\nx = 10\ny = 5\nprint(x + y)\n```",
+            "answers": [
+                {
+                "answer": "15",
+                "status": true
+                },
+                {
+                "answer": "10",
+                "status": false
+                },
+                {
+                "answer": "5",
+                "status": false
+                },
+                {
+                "answer": "105",
+                "status": false
+                }
+            ],
+            "explanation": "Le code additionne les valeurs de `x` et `y`, qui sont respectivement 10 et 5. La sortie sera donc 15.",
+            "source": "https://docs.python.org/3/tutorial/introduction.html#numbers"
             },
             {
-                "question": "Quelle syntaxe permet de cibler un élément se trouvant dans un autre élément ?",
-                "answers": [
-                    {
-                        "answer": ".main-list_li { }",
-                        "status": false
-                    },
-                    {
-                        "answer": ".main-list, li { }",
-                        "status": false
-                    },
-                    {
-                        "answer": "li.main-list { }",
-                        "status": false
-                    },
-                    {
-                        "answer": ".main-list li { }",
-                        "status": true
-                    }
-                ],
-                "explaination": "Un espace entre deux sélecteurs permet de cibler le second (li) se trouvant dans le premier (.main-list)."
+            "question": "Quelle est la méthode Python utilisée pour obtenir l'entrée de l'utilisateur depuis la ligne de commande ?",
+            "answers": [
+                {
+                "answer": "input()",
+                "status": true
+                },
+                {
+                "answer": "get()",
+                "status": false
+                },
+                {
+                "answer": "readline()",
+                "status": false
+                },
+                {
+                "answer": "scan()",
+                "status": false
+                }
+            ],
+            "explanation": "La fonction `input()` est utilisée pour obtenir l'entrée de l'utilisateur depuis la ligne de commande en Python.",
+            "source": "https://docs.python.org/3/library/functions.html#input"
+            },
+            {
+            "question": "Quelle est la méthode Python utilisée pour obtenir la longueur d'une liste ou d'une chaîne de caractères ?",
+            "answers": [
+                {
+                "answer": "len()",
+                "status": true
+                },
+                {
+                "answer": "length()",
+                "status": false
+                },
+                {
+                "answer": "count()",
+                "status": false
+                },
+                {
+                "answer": "size()",
+                "status": false
+                }
+            ],
+            "explanation": "La méthode `len()` est utilisée pour obtenir la longueur d'une liste ou d'une chaîne de caractères en Python.",
+            "source": "https://docs.python.org/3/library/functions.html#len"
+            },
+            {
+            "question": "Quel est l'opérateur utilisé pour la division réelle (avec décimales) en Python ?",
+            "answers": [
+                {
+                "answer": "/",
+                "status": true
+                },
+                {
+                "answer": "//",
+                "status": false
+                },
+                {
+                "answer": "%",
+                "status": false
+                },
+                {
+                "answer": "*",
+                "status": false
+                }
+            ],
+            "explanation": "L'opérateur `/` est utilisé pour effectuer une division réelle en Python, qui retourne un résultat avec des décimales si nécessaire.",
+            "source": "https://docs.python.org/3/reference/expressions.html#division"
+            },
+            {
+            "question": "Quelle est la méthode Python utilisée pour convertir une chaîne de caractères en majuscules ?",
+            "answers": [
+                {
+                "answer": "upper()",
+                "status": true
+                },
+                {
+                "answer": "capitalize()",
+                "status": false
+                },
+                {
+                "answer": "lower()",
+                "status": false
+                },
+                {
+                "answer": "title()",
+                "status": false
+                }
+            ],
+            "explanation": "La méthode `upper()` est utilisée pour convertir une chaîne de caractères en majuscules en Python.",
+            "source": "https://docs.python.org/3/library/stdtypes.html#str.upper"
             }
-
         ]
     }
-
 ]
