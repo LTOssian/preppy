@@ -26,7 +26,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Les labels permettent de décrire les inputs d'un form à travers l'ID. Les ajouter rend votre HTML plus accessible pour les utilisateurs.",
+                    "explanation": "Les labels permettent de décrire les inputs d'un form à travers l'ID. Les ajouter rend votre HTML plus accessible pour les utilisateurs.",
                     "source": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/label"
                 },
                 {
@@ -49,7 +49,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Afin de grouper des 'form controls' il faut utiliser l'ément <fieldset>.",
+                    "explanation": "Afin de grouper des 'form controls' il faut utiliser l'ément <fieldset>.",
                     "source": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/fieldset"
                 },
                 {
@@ -72,7 +72,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Déclarer le doctype indique au navigateur que le fichier est un document HTML.",
+                    "explanation": "Déclarer le doctype indique au navigateur que le fichier est un document HTML.",
                     "source": "https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
                 },
                 {
@@ -95,7 +95,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Bien vu !",
+                    "explanation": "Bien vu !",
                     "source": "https://developer.mozilla.org/en-US/docs/Web/API/Comment"
                 },
                 {
@@ -118,7 +118,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Le tag <head> contient toutes les metadata de la page HTML.",
+                    "explanation": "Le tag <head> contient toutes les metadata de la page HTML.",
                     "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
                 },
                 {
@@ -141,7 +141,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "L'attribut target avec la valeur '_blank' va ouvrir une nouvelle page quand le lien est cliqué."
+                    "explanation": "L'attribut target avec la valeur '_blank' va ouvrir une nouvelle page quand le lien est cliqué."
                 },
                 {
                     "question": "Quel est le standard HTML actuel ?",
@@ -163,7 +163,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Bien vu !"
+                    "explanation": "Bien vu !"
                 },
                 {
                     "question": "Laquelle de ces syntaxes permet de créer un lien vers le fichier accueil.html ?",
@@ -185,7 +185,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Bien vu, il s'agit de la bonne syntaxe.",
+                    "explanation": "Bien vu, il s'agit de la bonne syntaxe.",
                     "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled"
                 },
                 {
@@ -208,7 +208,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "L'attribut booléen 'disabled' rend l'élément non-focusable, non-mutable et ne peut être soumis au serveur.",
+                    "explanation": "L'attribut booléen 'disabled' rend l'élément non-focusable, non-mutable et ne peut être soumis au serveur.",
                     "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled"
                 },
                 {
@@ -231,7 +231,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Et oui ! L'élément <title> définit le titre du document qui est affiché dans la barre de titre du navigateur ou dans l'onglet de la page.",
+                    "explanation": "Et oui ! L'élément <title> définit le titre du document qui est affiché dans la barre de titre du navigateur ou dans l'onglet de la page.",
                     "source": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/title"
                 },
                 {
@@ -254,7 +254,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Bien vu !"
+                    "explanation": "Bien vu !"
                 }                
             ]
         },
@@ -282,7 +282,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
+                    "explanation": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
                 },
                 {
                     "question": "Quelle syntaxe permet de cibler un élément se trouvant dans un autre élément ?",
@@ -304,7 +304,7 @@ export class QuizContent {
                             "status": true
                         }
                     ],
-                    "explaination": "Un espace entre deux sélecteurs permet de cibler le second (li) se trouvant dans le premier (.main-list)."
+                    "explanation": "Un espace entre deux sélecteurs permet de cibler le second (li) se trouvant dans le premier (.main-list)."
                 }
     
             ]
@@ -333,7 +333,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
+                    "explanation": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
                 }
             ]
         },
@@ -361,7 +361,7 @@ export class QuizContent {
                             "status": false
                         }
                     ],
-                    "explaination": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
+                    "explanation": "Les ID sont les sélécteurs les plus spécifiques car ils ne peuvent être assigné que sur un élément HTML"
                 },
                 {
                     "question": "Quelle syntaxe permet de cibler un élément se trouvant dans un autre élément ?",
@@ -383,7 +383,7 @@ export class QuizContent {
                             "status": true
                         }
                     ],
-                    "explaination": "Un espace entre deux sélecteurs permet de cibler le second (li) se trouvant dans le premier (.main-list)."
+                    "explanation": "Un espace entre deux sélecteurs permet de cibler le second (li) se trouvant dans le premier (.main-list)."
                 }
     
             ]
