@@ -6,14 +6,14 @@ The goal is to create a quiz application that displays a score at the end of eac
 
 - See all quizzes available
 - Answer the questions one by one and see a source and an explanation when answered
-- See their score at the end of the quiz
+- See their score at the end of the quiz as a percentage
 
 ## Stack
 
 - HTML5
 - CSS3
-- Angular
 - TypeScript
+- Angular
 - Karma
 
 ## Screenshot
@@ -22,5 +22,5 @@ The goal is to create a quiz application that displays a score at the end of eac
 
 ## Resources
 
-- [Angular doc](https://angular.io/guide/component-overview)
+- [Angular documentation](https://angular.io/guide/component-overview)
 - [Deborah Kurata's Channel](https://www.youtube.com/@deborah_kurata)
