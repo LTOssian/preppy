@@ -14,7 +14,7 @@ The goal is to create a quiz application that displays a score at the end of eac
 - CSS3
 - TypeScript
 - Angular
-- Karma
+- Jasmine
 
 ## Screenshot
 
@@ -22,5 +22,6 @@ The goal is to create a quiz application that displays a score at the end of eac
 
 ## Resources
 
-- [Angular documentation](https://angular.io/guide/component-overview)
+- [Angular Documentation](https://angular.io/guide/component-overview)
+- [Jasmine Documentation](https://jasmine.github.io/pages/docs_home.html)
 - [Deborah Kurata's Channel](https://www.youtube.com/@deborah_kurata)
