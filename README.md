@@ -1,27 +1,26 @@
-# HXperience
+# Preppy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+The goal is to create a quiz application that displays a score at the end of each quiz.
 
-## Development server
+## Users should be able to
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- See all quizzes available
+- Answer the questions one by one and see a source and an explanation when answered
+- See their score at the end of the quiz
 
-## Code scaffolding
+## Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- HTML5
+- CSS3
+- Angular
+- TypeScript
+- Karma
 
-## Build
+## Screenshot
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Home Screenshot](./src/assets/screenshot_home.png)
 
-## Running unit tests
+## Resources
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Angular doc](https://angular.io/guide/component-overview)
+- [Deborah Kurata's Channel](https://www.youtube.com/@deborah_kurata)
